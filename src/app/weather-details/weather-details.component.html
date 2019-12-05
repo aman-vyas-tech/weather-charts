@@ -1,0 +1,47 @@
+<p>weather-details works!</p>
+
+<!-- <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="humidity">
+      <th mat-header-cell *matHeaderCellDef> Humidity </th>
+      <td mat-cell *matCellDef="let element"> {{element.humidity}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Sensor_Location">
+      <th mat-header-cell *matHeaderCellDef> Sensor_Location </th>
+      <td mat-cell *matCellDef="let element"> {{element.Sensor_Location}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Solar_Radiation">
+      <th mat-header-cell *matHeaderCellDef> Solar_Radiation </th>
+      <td mat-cell *matCellDef="let element"> {{element.Solar_Radiation}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="Wind_Speed">
+      <th mat-header-cell *matHeaderCellDef> Wind_Speed </th>
+      <td mat-cell *matCellDef="let element"> {{element.Wind_Speed}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table> -->
+
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<div>
+    <table>
+        <thead>
+            <th>Humidity</th>
+            <th>Sensor_Location</th>
+            <th>Solar_Radiation</th>
+            <th>Wind_Speed</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of weatherData">
+                <td>{{item.Humidity}}</td>
+                <td>{{item.Sensor_Location}}</td>
+                <td>{{item.Solar_Radiation}}</td>
+                <td>{{Wind_Speed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
